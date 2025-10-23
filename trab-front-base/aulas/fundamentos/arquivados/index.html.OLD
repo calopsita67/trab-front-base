@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul style="display: flex; justify-content: space-around; align-items: center">
+        <li style="list-style: none;">
+            <a href="#">
+                <img src="./images/netshoes-logo.png" alt="netshoes-logo" width="300px">
+            </a>
+        </li>
+        <li style="list-style: none;">
+            <a href="#">Home</a>
+        </li>
+        <li style="list-style: none;">
+            <a href="#">Sobre</a>
+        </li>
+        <li style="list-style: none;">
+            <a href="#">Blog</a>
+        </li>
+    </ul>
+    <div>
+        <!-- Botão usado em formulários -->
+        <button>Clique-me</button><br />
+        <a href="#">Click2</a><br /><br />
+        <a href="https://www.netshoes.com.br/">Click3</a><br /><br />
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
