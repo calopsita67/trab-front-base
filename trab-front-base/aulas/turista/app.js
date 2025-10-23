@@ -1,4 +1,4 @@
-const lugares = ["montanha", "praia"]
+const lugares = ["montanha", "praia", "museu"]
 const mensagem = `
     ---Roteiro de Viagens---
     Lugares: ${lugares}
@@ -15,4 +15,5 @@ if (!escolhaUsuario) {
       window.location.href = `${lugar}.html`
     }
   }
+
 }
