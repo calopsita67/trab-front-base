@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Layout com cards */
+#app.com-componente {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Formulário */
+#form-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-user {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+.imagem-container {
+  width: 100%;
+  height: 180px; /* altura fixa */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imagem-container input {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção e preenche o container */
+  display: block;
+}
+
+#form-user input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#form-user button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#form-user button:hover {
+  background-color: #0056b3;
+}
+
+/* Cards */
+#container-cards {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 16px;
+  width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
